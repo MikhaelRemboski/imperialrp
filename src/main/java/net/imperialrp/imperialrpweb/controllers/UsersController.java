@@ -1,9 +1,15 @@
 package net.imperialrp.imperialrpweb.controllers;
 
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 
-@Component
+@Controller
 public class UsersController {
-    
+
+    @PostMapping("/addVipForm")
+    public String addvip(Model model){
+
+        return "addVipForm";
+    }
 }
